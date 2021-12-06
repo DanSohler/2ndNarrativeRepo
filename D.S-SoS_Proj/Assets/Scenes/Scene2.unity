@@ -262,6 +262,8 @@ GameObject:
   - component: {fileID: 965841021}
   - component: {fileID: 965841020}
   - component: {fileID: 965841022}
+  - component: {fileID: 965841023}
+  - component: {fileID: 965841024}
   m_Layer: 0
   m_Name: MainFlow
   m_TagString: MainFlowchart
@@ -300,7 +302,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 314
     y: 48
-    width: 90
+    width: 91.09587
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -311,6 +313,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 2453113842641918046}
   - {fileID: 2453113841996941370}
+  - {fileID: 965841023}
+  - {fileID: 965841024}
   - {fileID: 2453113841996941376}
   - {fileID: 2453113841996941373}
   suppressAllAutoSelections: 0
@@ -327,11 +331,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -144.97705, y: -157.86356}
+  scrollPos: {x: -130.75491, y: 6.398529}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.73000026
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -339,9 +343,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2453113842641918029}
+  - {fileID: 965841019}
   selectedCommands:
-  - {fileID: 965841002}
+  - {fileID: 965841017}
   variables:
   - {fileID: 965841004}
   - {fileID: 965841021}
@@ -430,7 +434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: Eye_Colour
+  key: EyeColour
   value: 
 --- !u!114 &965841005
 MonoBehaviour:
@@ -448,7 +452,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 308.10413
     y: 247.33499
-    width: 110
+    width: 108.90408
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -457,9 +461,9 @@ MonoBehaviour:
   description: Small Option
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 965841013}
   - {fileID: 965841010}
   - {fileID: 965841009}
+  - {fileID: 965841013}
   - {fileID: 965841007}
   suppressAllAutoSelections: 0
 --- !u!114 &965841006
@@ -748,7 +752,7 @@ MonoBehaviour:
   textObject: {fileID: 1011207156}
   text:
     stringRef: {fileID: 0}
-    stringVal: 'Nose: Subtle'
+    stringVal: 'Nose: {$NoseShape}'
   description: 
   clearText: 1
   waitUntilFinished: 1
@@ -776,7 +780,7 @@ MonoBehaviour:
   textObject: {fileID: 1011207156}
   text:
     stringRef: {fileID: 0}
-    stringVal: 'Nose: Small'
+    stringVal: 'Nose: {$NoseShape}'
   description: 
   clearText: 1
   waitUntilFinished: 1
@@ -1002,7 +1006,7 @@ MonoBehaviour:
   textObject: {fileID: 1011207156}
   text:
     stringRef: {fileID: 0}
-    stringVal: 'Nose: Sleek'
+    stringVal: 'Nose: {$NoseShape}'
   description: 
   clearText: 1
   waitUntilFinished: 1
@@ -1056,7 +1060,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 465.6039
     y: 247.33502
-    width: 111
+    width: 110.27396
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1065,9 +1069,9 @@ MonoBehaviour:
   description: Sleek Option
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 965841017}
   - {fileID: 965841018}
   - {fileID: 965841016}
+  - {fileID: 965841017}
   - {fileID: 965841015}
   suppressAllAutoSelections: 0
 --- !u!114 &965841020
@@ -1083,7 +1087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: Hair_Style
+  key: HairType
   value: 
 --- !u!114 &965841021
 MonoBehaviour:
@@ -1098,7 +1102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: Nose_Shape
+  key: NoseShape
   value: 
 --- !u!114 &965841022
 MonoBehaviour:
@@ -1127,6 +1131,62 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &965841023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2261dbe44de43a980e6f7c77c88f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 48
+  indentLevel: 0
+  textObject: {fileID: 1011207156}
+  text:
+    stringRef: {fileID: 0}
+    stringVal: 'Nose: {$NoseShape}'
+  description: 
+  clearText: 1
+  waitUntilFinished: 1
+  textColor: 0
+  setAlpha:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  setColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &965841024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2261dbe44de43a980e6f7c77c88f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 49
+  indentLevel: 0
+  textObject: {fileID: 1618479044}
+  text:
+    stringRef: {fileID: 0}
+    stringVal: 'Hair: {$HairType}'
+  description: 
+  clearText: 1
+  waitUntilFinished: 1
+  textColor: 0
+  setAlpha:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  setColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1011207156 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 991005700183146012, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
@@ -1465,6 +1525,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
+--- !u!1 &1618479043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4002056275336797200, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
+  m_PrefabInstance: {fileID: 1618479042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1618479044 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6839734949525810189, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
+  m_PrefabInstance: {fileID: 1618479042}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1687258581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1768,10 +1838,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 20
   indentLevel: 0
-  textObject: {fileID: 0}
+  textObject: {fileID: 1618479043}
   text:
     stringRef: {fileID: 0}
-    stringVal: '{$MoneyName}: {$Money}'
+    stringVal: 'Eyes: {$EyeColour}'
   description: 
   clearText: 1
   waitUntilFinished: 1
@@ -2014,7 +2084,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 321.2725
     y: 419.86356
-    width: 79
+    width: 78.76711
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2064,7 +2134,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 316.40906
     y: 158.93617
-    width: 90
+    width: 91.09587
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2151,7 +2221,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 145.95538
     y: 245.72102
-    width: 110
+    width: 108.90408
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2160,9 +2230,9 @@ MonoBehaviour:
   description: Subtle Option
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 965841012}
   - {fileID: 2453113842641918039}
   - {fileID: 2453113842641918026}
+  - {fileID: 965841012}
   - {fileID: 2453113842641918028}
   suppressAllAutoSelections: 0
 --- !u!114 &2453113842641918039

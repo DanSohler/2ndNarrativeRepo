@@ -252,6 +252,8 @@ GameObject:
   - component: {fileID: 965841021}
   - component: {fileID: 965841020}
   - component: {fileID: 965841022}
+  - component: {fileID: 965841005}
+  - component: {fileID: 965841007}
   m_Layer: 0
   m_Name: MainFlow
   m_TagString: MainFlowchart
@@ -301,6 +303,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 2453113842641918046}
   - {fileID: 2453113841996941370}
+  - {fileID: 965841005}
+  - {fileID: 965841007}
   - {fileID: 2453113841996941376}
   - {fileID: 2453113841996941373}
   suppressAllAutoSelections: 0
@@ -329,9 +333,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2453113842641918033}
+  - {fileID: 965840999}
   selectedCommands:
-  - {fileID: 965841006}
+  - {fileID: 965841007}
   variables:
   - {fileID: 965841004}
   - {fileID: 965841021}
@@ -420,8 +424,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: Eye_Colour
+  key: EyeColour
   value: 
+--- !u!114 &965841005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2261dbe44de43a980e6f7c77c88f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 48
+  indentLevel: 0
+  textObject: {fileID: 1011207156}
+  text:
+    stringRef: {fileID: 0}
+    stringVal: 'Nose: {$NoseShape}'
+  description: 
+  clearText: 1
+  waitUntilFinished: 1
+  textColor: 0
+  setAlpha:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  setColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &965841006
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -439,6 +471,34 @@ MonoBehaviour:
   images:
   - {fileID: 1904983236}
   sprite: {fileID: 21300000, guid: a294c75a063a90a4685659b601717fe7, type: 3}
+--- !u!114 &965841007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2261dbe44de43a980e6f7c77c88f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 49
+  indentLevel: 0
+  textObject: {fileID: 1618479044}
+  text:
+    stringRef: {fileID: 0}
+    stringVal: 'Hair: {$HairType}'
+  description: 
+  clearText: 1
+  waitUntilFinished: 1
+  textColor: 0
+  setAlpha:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  setColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &965841008
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -557,7 +617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: Hair_Style
+  key: HairType
   value: 
 --- !u!114 &965841021
 MonoBehaviour:
@@ -572,7 +632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: Nose_Shape
+  key: NoseShape
   value: 
 --- !u!114 &965841022
 MonoBehaviour:
@@ -939,6 +999,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
+--- !u!1 &1618479043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4002056275336797200, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
+  m_PrefabInstance: {fileID: 1618479042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1618479044 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6839734949525810189, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
+  m_PrefabInstance: {fileID: 1618479042}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1687258581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,10 +1312,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 20
   indentLevel: 0
-  textObject: {fileID: 0}
+  textObject: {fileID: 1618479043}
   text:
     stringRef: {fileID: 0}
-    stringVal: '{$MoneyName}: {$Money}'
+    stringVal: 'Eyes: {$EyeColour}'
   description: 
   clearText: 1
   waitUntilFinished: 1

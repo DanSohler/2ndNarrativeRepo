@@ -262,6 +262,10 @@ GameObject:
   - component: {fileID: 965841022}
   - component: {fileID: 965841021}
   - component: {fileID: 965841020}
+  - component: {fileID: 965841023}
+  - component: {fileID: 965841024}
+  - component: {fileID: 965841025}
+  - component: {fileID: 965841026}
   m_Layer: 0
   m_Name: MainFlow
   m_TagString: MainFlowchart
@@ -311,6 +315,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 2453113842641918046}
   - {fileID: 2453113841996941370}
+  - {fileID: 965841026}
+  - {fileID: 965841025}
   - {fileID: 2453113841996941376}
   - {fileID: 2453113841996941373}
   suppressAllAutoSelections: 0
@@ -338,10 +344,14 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 2453113842641918036}
+  selectedCommands:
+  - {fileID: 965841012}
   variables:
   - {fileID: 965841004}
+  - {fileID: 965841023}
+  - {fileID: 965841024}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -425,7 +435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: Var
+  key: EyeColour
   value: 
 --- !u!114 &965841005
 MonoBehaviour:
@@ -441,7 +451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 305.39532
+    x: 306.53168
     y: 248.47139
     width: 110.227264
     height: 40
@@ -452,9 +462,9 @@ MonoBehaviour:
   description: Hazel Option
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 965841013}
   - {fileID: 965841010}
   - {fileID: 965841009}
+  - {fileID: 965841013}
   - {fileID: 965841020}
   - {fileID: 965841007}
   suppressAllAutoSelections: 0
@@ -744,7 +754,7 @@ MonoBehaviour:
   textObject: {fileID: 1618479043}
   text:
     stringRef: {fileID: 0}
-    stringVal: 'Eyes: Blue'
+    stringVal: 'Eyes: {$EyeColour}'
   description: 
   clearText: 1
   waitUntilFinished: 1
@@ -772,7 +782,7 @@ MonoBehaviour:
   textObject: {fileID: 1618479043}
   text:
     stringRef: {fileID: 0}
-    stringVal: 'Eyes: Hazel'
+    stringVal: 'Eyes: {$EyeColour}'
   description: 
   clearText: 1
   waitUntilFinished: 1
@@ -998,7 +1008,7 @@ MonoBehaviour:
   textObject: {fileID: 1618479043}
   text:
     stringRef: {fileID: 0}
-    stringVal: 'Eyes: Green'
+    stringVal: 'Eyes: {$EyeColour}'
   description: 
   clearText: 1
   waitUntilFinished: 1
@@ -1061,9 +1071,9 @@ MonoBehaviour:
   description: Green Option
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 965841017}
   - {fileID: 965841018}
   - {fileID: 965841016}
+  - {fileID: 965841017}
   - {fileID: 965841022}
   - {fileID: 965841015}
   suppressAllAutoSelections: 0
@@ -1148,6 +1158,92 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &965841023
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 2
+  key: NoseShape
+  value: 
+--- !u!114 &965841024
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 2
+  key: HairType
+  value: 
+--- !u!114 &965841025
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2261dbe44de43a980e6f7c77c88f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 46
+  indentLevel: 0
+  textObject: {fileID: 1618479044}
+  text:
+    stringRef: {fileID: 0}
+    stringVal: 'Hair: {$HairType}'
+  description: 
+  clearText: 1
+  waitUntilFinished: 1
+  textColor: 0
+  setAlpha:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  setColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &965841026
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2261dbe44de43a980e6f7c77c88f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 47
+  indentLevel: 0
+  textObject: {fileID: 1618479045}
+  text:
+    stringRef: {fileID: 0}
+    stringVal: 'Nose: {$NoseShape}'
+  description: 
+  clearText: 1
+  waitUntilFinished: 1
+  textColor: 0
+  setAlpha:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  setColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1214789573
 GameObject:
   m_ObjectHideFlags: 1
@@ -1436,6 +1532,16 @@ PrefabInstance:
 --- !u!1 &1618479043 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4002056275336797200, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
+  m_PrefabInstance: {fileID: 1618479042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1618479044 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6839734949525810189, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
+  m_PrefabInstance: {fileID: 1618479042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1618479045 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 991005700183146012, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
   m_PrefabInstance: {fileID: 1618479042}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1687258581
@@ -1741,10 +1847,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 20
   indentLevel: 0
-  textObject: {fileID: 0}
+  textObject: {fileID: 1618479043}
   text:
     stringRef: {fileID: 0}
-    stringVal: '{$MoneyName}: {$Money}'
+    stringVal: 'Eyes: {$EyeColour}'
   description: 
   clearText: 1
   waitUntilFinished: 1
@@ -2132,8 +2238,8 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 2453113842641918039}
-  - {fileID: 965841012}
   - {fileID: 2453113842641918026}
+  - {fileID: 965841012}
   - {fileID: 965841021}
   - {fileID: 2453113842641918028}
   suppressAllAutoSelections: 0
