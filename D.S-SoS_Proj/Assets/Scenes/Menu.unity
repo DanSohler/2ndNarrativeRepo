@@ -1286,7 +1286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: NoseShape
+  key: Expression
   value: 
 --- !u!1 &2035155852
 GameObject:

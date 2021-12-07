@@ -1102,7 +1102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: NoseShape
+  key: Expression
   value: 
 --- !u!114 &965841022
 MonoBehaviour:

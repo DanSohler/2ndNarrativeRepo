@@ -342,10 +342,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 965841019}
-  selectedCommands:
-  - {fileID: 965841017}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 965841004}
   - {fileID: 965841021}
@@ -1102,7 +1100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: NoseShape
+  key: Expression
   value: 
 --- !u!114 &965841022
 MonoBehaviour:

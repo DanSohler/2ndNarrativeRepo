@@ -233,12 +233,10 @@ GameObject:
   - component: {fileID: 2453113842641918034}
   - component: {fileID: 2453113842641918035}
   - component: {fileID: 2453113842641918036}
-  - component: {fileID: 2453113842641918039}
   - component: {fileID: 2453113842641918026}
   - component: {fileID: 2453113842641918028}
   - component: {fileID: 2453113842641918029}
   - component: {fileID: 2453113842641918030}
-  - component: {fileID: 2453113841996941370}
   - component: {fileID: 2453113841996941373}
   - component: {fileID: 2453113841996941376}
   - component: {fileID: 965841002}
@@ -249,12 +247,10 @@ GameObject:
   - component: {fileID: 965841007}
   - component: {fileID: 965841004}
   - component: {fileID: 965841011}
-  - component: {fileID: 965841010}
   - component: {fileID: 965841009}
   - component: {fileID: 965841012}
   - component: {fileID: 965841013}
   - component: {fileID: 965841019}
-  - component: {fileID: 965841018}
   - component: {fileID: 965841017}
   - component: {fileID: 965841016}
   - component: {fileID: 965841015}
@@ -266,6 +262,16 @@ GameObject:
   - component: {fileID: 965841024}
   - component: {fileID: 965841025}
   - component: {fileID: 965841026}
+  - component: {fileID: 965841028}
+  - component: {fileID: 965841027}
+  - component: {fileID: 965841029}
+  - component: {fileID: 965841030}
+  - component: {fileID: 965841031}
+  - component: {fileID: 965841037}
+  - component: {fileID: 965841032}
+  - component: {fileID: 965841036}
+  - component: {fileID: 965841035}
+  - component: {fileID: 965841034}
   m_Layer: 0
   m_Name: MainFlow
   m_TagString: MainFlowchart
@@ -302,8 +308,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 314
-    y: 48
+    x: 324.22717
+    y: 66.181816
     width: 89.77272
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -314,8 +320,6 @@ MonoBehaviour:
   eventHandler: {fileID: 965840998}
   commandList:
   - {fileID: 2453113842641918046}
-  - {fileID: 2453113841996941370}
-  - {fileID: 965841026}
   - {fileID: 965841025}
   - {fileID: 2453113841996941376}
   - {fileID: 2453113841996941373}
@@ -333,7 +337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -90.40912, y: 46.189392}
+  scrollPos: {x: -93.81821, y: 1.8712063}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -347,11 +351,11 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 2453113842641918036}
   selectedCommands:
-  - {fileID: 965841012}
+  - {fileID: 2453113842641918026}
   variables:
+  - {fileID: 965841024}
   - {fileID: 965841004}
   - {fileID: 965841023}
-  - {fileID: 965841024}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -409,7 +413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 26
   indentLevel: 0
-  storyText: I remember her eyes looking blue in the reflection of the glass door
+  storyText: ' I ran out of ink in my pens, I better go get some more from the store.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -435,7 +439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: EyeColour
+  key: Expression
   value: 
 --- !u!114 &965841005
 MonoBehaviour:
@@ -452,17 +456,16 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 306.53168
-    y: 248.47139
+    y: 247.33502
     width: 110.227264
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 29
   blockName: Decision B
-  description: Hazel Option
+  description: Long Option
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 965841010}
   - {fileID: 965841009}
   - {fileID: 965841013}
   - {fileID: 965841020}
@@ -520,7 +523,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 28
   indentLevel: 0
-  storyText: What did her eyes look like?
+  storyText: "Haven\u2019t had to go years in years, me and Bella were looking to
+    buy a cheap laptop for her studies."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -548,7 +552,7 @@ MonoBehaviour:
   itemId: 33
   indentLevel: 0
   anyVar:
-    variable: {fileID: 965841004}
+    variable: {fileID: 965841024}
     data:
       animatorData:
         animatorRef: {fileID: 0}
@@ -619,7 +623,7 @@ MonoBehaviour:
         spriteVal: {fileID: 0}
       stringData:
         stringRef: {fileID: 0}
-        stringVal: Hazel
+        stringVal: Long
       textureData:
         textureRef: {fileID: 0}
         textureVal: {fileID: 0}
@@ -685,33 +689,6 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &965841010
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965840997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 32
-  indentLevel: 0
-  storyText: That's right, they we're hazel!
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &965841011
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -726,7 +703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 31
   indentLevel: 0
-  text: Hazel?
+  text: Long?
   description: Decision B
   targetBlock: {fileID: 965841005}
   hideIfVisited: 0
@@ -807,7 +784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 41
   indentLevel: 0
-  text: Green?
+  text: Tidy?
   description: Decision C
   targetBlock: {fileID: 965841019}
   hideIfVisited: 0
@@ -854,7 +831,7 @@ MonoBehaviour:
   itemId: 39
   indentLevel: 0
   anyVar:
-    variable: {fileID: 965841004}
+    variable: {fileID: 965841024}
     data:
       animatorData:
         animatorRef: {fileID: 0}
@@ -925,7 +902,7 @@ MonoBehaviour:
         spriteVal: {fileID: 0}
       stringData:
         stringRef: {fileID: 0}
-        stringVal: Green
+        stringVal: Tidy
       textureData:
         textureRef: {fileID: 0}
         textureVal: {fileID: 0}
@@ -1019,33 +996,6 @@ MonoBehaviour:
   setColor:
     colorRef: {fileID: 0}
     colorVal: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &965841018
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965840997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 37
-  indentLevel: 0
-  storyText: That's right, they we're green!
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &965841019
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1060,7 +1010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 463.3312
+    x: 464.46756
     y: 248.2379
     width: 111.36363
     height: 40
@@ -1068,10 +1018,9 @@ MonoBehaviour:
   useCustomTint: 0
   itemId: 42
   blockName: Decision C
-  description: Green Option
+  description: Tidy Option
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 965841018}
   - {fileID: 965841016}
   - {fileID: 965841017}
   - {fileID: 965841022}
@@ -1091,7 +1040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 45
   indentLevel: 0
-  storyText: Those hazel eyes we're the first thing I noticed about her.
+  storyText: "Oh yeah, that\u2019s right, it was {$HairType}"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1118,7 +1067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 44
   indentLevel: 0
-  storyText: Those blueeyes we're the first thing I noticed about her.
+  storyText: "Oh yeah, that\u2019s right, it was {$HairType}"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1145,7 +1094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 43
   indentLevel: 0
-  storyText: Those green eyes we're the first thing I noticed about her.
+  storyText: "Oh yeah, that\u2019s right, it was {$HairType}"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1225,25 +1174,269 @@ MonoBehaviour:
   m_GameObject: {fileID: 965840997}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad2261dbe44de43a980e6f7c77c88f7f, type: 3}
+  m_Script: {fileID: 11500000, guid: 82e4c082f762243f6943909a4272096d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 47
   indentLevel: 0
-  textObject: {fileID: 1618479045}
-  text:
-    stringRef: {fileID: 0}
-    stringVal: 'Nose: {$NoseShape}'
+  images:
+  - {fileID: 1904983236}
+  sprite: {fileID: 21300000, guid: 07d69398c9424a546bb278e40057fa5a, type: 3}
+--- !u!114 &965841027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 49
+  indentLevel: 0
+  storyText: She has been fixated one this little blue computer, no bigger than a
+    schoolbook, terribly overpriced though.
   description: 
-  clearText: 1
-  waitUntilFinished: 1
-  textColor: 0
-  setAlpha:
-    floatRef: {fileID: 0}
-    floatVal: 1
-  setColor:
-    colorRef: {fileID: 0}
-    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &965841028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 48
+  indentLevel: 0
+  storyText: 'Large rows of samey-looking metal trays, with gimmicks and stickers
+    screaming to be sold. '
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &965841029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 50
+  indentLevel: 0
+  storyText: "Wait no, that\u2019s not right. I remember she held it up to her face,
+    but I can\u2019t remember her face."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &965841030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 51
+  indentLevel: 0
+  storyText: Oh god, I was fearing this. I might have something at home.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &965841031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82e4c082f762243f6943909a4272096d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 52
+  indentLevel: 0
+  images:
+  - {fileID: 1904983236}
+  sprite: {fileID: 21300000, guid: ae954b5d9f81f414d846765940fe8865, type: 3}
+--- !u!114 &965841032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 55
+  indentLevel: 0
+  storyText: 'No, nononono, no god no. What did her face look like? Okay, relax,
+    relax, one feature at a time. '
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &965841034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 59
+  indentLevel: 0
+  storyText: 'Think Arnold, think! What was her hair like? '
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &965841035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 57
+  indentLevel: 0
+  storyText: Her hair, what did her hair look like? All I remember is that the laptop
+    matched her hair!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &965841036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82e4c082f762243f6943909a4272096d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 56
+  indentLevel: 0
+  images:
+  - {fileID: 1904983236}
+  sprite: {fileID: 21300000, guid: 813a51119fc3b0c4c92e1bf16ebb14b7, type: 3}
+--- !u!114 &965841037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 54
+  indentLevel: 0
+  storyText: "God, I hope I don\u2019t forget where the album is before I get back! "
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1214789573
 GameObject:
   m_ObjectHideFlags: 1
@@ -1539,11 +1732,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6839734949525810189, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
   m_PrefabInstance: {fileID: 1618479042}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1618479045 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 991005700183146012, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
-  m_PrefabInstance: {fileID: 1618479042}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1687258581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,34 +2021,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 45, y: 130, z: 90}
---- !u!114 &2453113841996941370
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965840997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad2261dbe44de43a980e6f7c77c88f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 20
-  indentLevel: 0
-  textObject: {fileID: 1618479043}
-  text:
-    stringRef: {fileID: 0}
-    stringVal: 'Eyes: {$EyeColour}'
-  description: 
-  clearText: 1
-  waitUntilFinished: 1
-  textColor: 0
-  setAlpha:
-    floatRef: {fileID: 0}
-    floatVal: 1
-  setColor:
-    colorRef: {fileID: 0}
-    colorVal: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2453113841996941373
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1919,7 +2079,7 @@ MonoBehaviour:
   itemId: 14
   indentLevel: 0
   anyVar:
-    variable: {fileID: 965841004}
+    variable: {fileID: 965841024}
     data:
       animatorData:
         animatorRef: {fileID: 0}
@@ -1990,7 +2150,7 @@ MonoBehaviour:
         spriteVal: {fileID: 0}
       stringData:
         stringRef: {fileID: 0}
-        stringVal: Blue
+        stringVal: Short
       textureData:
         textureRef: {fileID: 0}
         textureVal: {fileID: 0}
@@ -2141,8 +2301,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 316.40906
-    y: 158.93617
+    x: 319.8181
+    y: 156.66344
     width: 89.77272
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2152,10 +2312,21 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 2453113842641918034}
   - {fileID: 965841006}
+  - {fileID: 2453113842641918034}
   - {fileID: 965841003}
+  - {fileID: 965841026}
   - {fileID: 965841008}
+  - {fileID: 965841028}
+  - {fileID: 965841027}
+  - {fileID: 965841031}
+  - {fileID: 965841029}
+  - {fileID: 965841030}
+  - {fileID: 965841037}
+  - {fileID: 965841036}
+  - {fileID: 965841032}
+  - {fileID: 965841035}
+  - {fileID: 965841034}
   - {fileID: 2453113842641918035}
   - {fileID: 965841011}
   - {fileID: 965841014}
@@ -2174,7 +2345,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 0
-  storyText: It's been 2 days since I've left my house.
+  storyText: "I think I\u2019m making good progress, it\u2019s been 6 weeks, and
+    the memoir is almost complete!"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2201,7 +2373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  text: Blue?
+  text: Short?
   description: Decision A
   targetBlock: {fileID: 2453113842641918036}
   hideIfVisited: 0
@@ -2226,7 +2398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 155.04639
+    x: 156.18275
     y: 249.1301
     width: 110.227264
     height: 40
@@ -2234,42 +2406,14 @@ MonoBehaviour:
   useCustomTint: 0
   itemId: 8
   blockName: Decision A
-  description: Blue Option
+  description: Short Option
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 2453113842641918039}
   - {fileID: 2453113842641918026}
   - {fileID: 965841012}
   - {fileID: 965841021}
   - {fileID: 2453113842641918028}
   suppressAllAutoSelections: 0
---- !u!114 &2453113842641918039
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965840997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 11
-  indentLevel: 0
-  storyText: That's right, they we're blue!
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &2453113842641918046
 MonoBehaviour:
   m_ObjectHideFlags: 2
