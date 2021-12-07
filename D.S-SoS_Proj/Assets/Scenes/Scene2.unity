@@ -250,18 +250,15 @@ GameObject:
   - component: {fileID: 965841030}
   - component: {fileID: 965841029}
   - component: {fileID: 965841028}
-  - component: {fileID: 965841027}
   - component: {fileID: 965841022}
   - component: {fileID: 965840999}
   - component: {fileID: 965841003}
   - component: {fileID: 965841002}
   - component: {fileID: 965841019}
   - component: {fileID: 965841018}
-  - component: {fileID: 965841017}
   - component: {fileID: 965841012}
   - component: {fileID: 965841005}
   - component: {fileID: 965841011}
-  - component: {fileID: 965841010}
   - component: {fileID: 965840998}
   - component: {fileID: 965841054}
   - component: {fileID: 965841055}
@@ -278,9 +275,6 @@ GameObject:
   - component: {fileID: 965841006}
   - component: {fileID: 965841007}
   - component: {fileID: 965841016}
-  - component: {fileID: 965841015}
-  - component: {fileID: 965841014}
-  - component: {fileID: 965841013}
   - component: {fileID: 965841009}
   - component: {fileID: 965841008}
   - component: {fileID: 965841023}
@@ -328,7 +322,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 273.6378
     y: 276.92407
-    width: 80.85106
+    width: 77.86884
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -353,19 +347,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -77.064674, y: 152.62975}
+  scrollPos: {x: 74.980515, y: 264.43204}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.94000006
+  zoom: 0.61000025
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 965841007}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 965841020}
@@ -467,7 +460,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 414.66504
     y: 115.42972
-    width: 112.76595
+    width: 109.01637
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -477,7 +470,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 965841011}
-  - {fileID: 965841010}
   - {fileID: 965840998}
   suppressAllAutoSelections: 0
 --- !u!114 &965841006
@@ -521,9 +513,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 267.94003
-    y: -50.289314
-    width: 91.489365
+    x: 270.06772
+    y: -70.50208
+    width: 89.344246
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -533,9 +525,6 @@ MonoBehaviour:
   eventHandler: {fileID: 965841023}
   commandList:
   - {fileID: 965841016}
-  - {fileID: 965841015}
-  - {fileID: 965841014}
-  - {fileID: 965841013}
   - {fileID: 965841009}
   - {fileID: 965841008}
   suppressAllAutoSelections: 0
@@ -582,34 +571,6 @@ MonoBehaviour:
   customDescription: 
   fireEvent: 1
   resumeOnLoad: 1
---- !u!114 &965841010
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965840997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad2261dbe44de43a980e6f7c77c88f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 44
-  indentLevel: 0
-  textObject: {fileID: 1618479043}
-  text:
-    stringRef: {fileID: 0}
-    stringVal: 'Exp: {$Expression}'
-  description: 
-  clearText: 1
-  waitUntilFinished: 1
-  textColor: 0
-  setAlpha:
-    floatRef: {fileID: 0}
-    floatVal: 1
-  setColor:
-    colorRef: {fileID: 0}
-    colorVal: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &965841011
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -783,90 +744,6 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &965841013
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965840997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad2261dbe44de43a980e6f7c77c88f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 71
-  indentLevel: 0
-  textObject: {fileID: 1618479045}
-  text:
-    stringRef: {fileID: 0}
-    stringVal: 'Fashion: {$Fashion}'
-  description: 
-  clearText: 1
-  waitUntilFinished: 1
-  textColor: 0
-  setAlpha:
-    floatRef: {fileID: 0}
-    floatVal: 1
-  setColor:
-    colorRef: {fileID: 0}
-    colorVal: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &965841014
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965840997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad2261dbe44de43a980e6f7c77c88f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 70
-  indentLevel: 0
-  textObject: {fileID: 1618479043}
-  text:
-    stringRef: {fileID: 0}
-    stringVal: 'Exp: {$Expression}'
-  description: 
-  clearText: 1
-  waitUntilFinished: 1
-  textColor: 0
-  setAlpha:
-    floatRef: {fileID: 0}
-    floatVal: 1
-  setColor:
-    colorRef: {fileID: 0}
-    colorVal: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &965841015
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965840997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad2261dbe44de43a980e6f7c77c88f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 69
-  indentLevel: 0
-  textObject: {fileID: 1618479044}
-  text:
-    stringRef: {fileID: 0}
-    stringVal: 'Hair: {$HairType}'
-  description: 
-  clearText: 1
-  waitUntilFinished: 1
-  textColor: 0
-  setAlpha:
-    floatRef: {fileID: 0}
-    floatVal: 1
-  setColor:
-    colorRef: {fileID: 0}
-    colorVal: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &965841016
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -882,34 +759,6 @@ MonoBehaviour:
   itemId: 68
   indentLevel: 0
   sayDialog: {fileID: 5595428796599416818}
---- !u!114 &965841017
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965840997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad2261dbe44de43a980e6f7c77c88f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 36
-  indentLevel: 0
-  textObject: {fileID: 1618479043}
-  text:
-    stringRef: {fileID: 0}
-    stringVal: 'Exp: {$Expression}'
-  description: 
-  clearText: 1
-  waitUntilFinished: 1
-  textColor: 0
-  setAlpha:
-    floatRef: {fileID: 0}
-    floatVal: 1
-  setColor:
-    colorRef: {fileID: 0}
-    colorVal: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &965841018
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1078,7 +927,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 262.0588
     y: 115.59067
-    width: 112.76595
+    width: 109.01637
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1088,7 +937,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 965841018}
-  - {fileID: 965841017}
   - {fileID: 965841012}
   suppressAllAutoSelections: 0
 --- !u!114 &965841020
@@ -1157,34 +1005,6 @@ MonoBehaviour:
   parentBlock: {fileID: 965841007}
   suppressBlockAutoSelect: 0
   waitForFrames: 5
---- !u!114 &965841027
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965840997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad2261dbe44de43a980e6f7c77c88f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 25
-  indentLevel: 0
-  textObject: {fileID: 1618479043}
-  text:
-    stringRef: {fileID: 0}
-    stringVal: 'Exp: {$Expression}'
-  description: 
-  clearText: 1
-  waitUntilFinished: 1
-  textColor: 0
-  setAlpha:
-    floatRef: {fileID: 0}
-    floatVal: 1
-  setColor:
-    colorRef: {fileID: 0}
-    colorVal: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &965841028
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1353,7 +1173,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 105.86963
     y: 117.321915
-    width: 112.76595
+    width: 109.01637
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1363,7 +1183,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 965841028}
-  - {fileID: 965841027}
   - {fileID: 965841022}
   suppressAllAutoSelections: 0
 --- !u!114 &965841030
@@ -1830,7 +1649,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 268.42014
     y: 20.90965
-    width: 92.55319
+    width: 90.98359
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2423,6 +2242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DetailUI
       objectReference: {fileID: 0}
+    - target: {fileID: 6934932361509853331, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6934932361509853343, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2525,21 +2348,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
---- !u!1 &1618479043 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 991005700183146012, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
-  m_PrefabInstance: {fileID: 1618479042}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1618479044 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4002056275336797200, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
-  m_PrefabInstance: {fileID: 1618479042}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1618479045 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6839734949525810189, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
-  m_PrefabInstance: {fileID: 1618479042}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1687258581
 GameObject:
   m_ObjectHideFlags: 0
