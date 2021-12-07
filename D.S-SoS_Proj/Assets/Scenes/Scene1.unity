@@ -259,7 +259,6 @@ GameObject:
   - component: {fileID: 965841021}
   - component: {fileID: 965841020}
   - component: {fileID: 965841024}
-  - component: {fileID: 965841025}
   - component: {fileID: 965841026}
   - component: {fileID: 965841028}
   - component: {fileID: 965841027}
@@ -320,7 +319,6 @@ MonoBehaviour:
   eventHandler: {fileID: 965840998}
   commandList:
   - {fileID: 2453113842641918046}
-  - {fileID: 965841025}
   - {fileID: 2453113841996941376}
   - {fileID: 2453113841996941373}
   suppressAllAutoSelections: 0
@@ -348,9 +346,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 2453113842641918033}
   selectedCommands:
-  - {fileID: 2453113842641918026}
+  - {fileID: 965841008}
   variables:
   - {fileID: 965841024}
   - {fileID: 965841004}
@@ -522,8 +521,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 28
   indentLevel: 0
-  storyText: "Haven\u2019t had to go years in years, me and Bella were looking to
-    buy a cheap laptop for her studies."
+  storyText: "Haven\u2019t had to go here in years, me and Bella were looking to
+    buy a cheap laptop for her studies. "
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1081,7 +1080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 44
   indentLevel: 0
-  storyText: "Oh yeah, that\u2019s right, it was {$HairType}"
+  storyText: "Oh yeah, that\u2019s right, it was {$HairType}!"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1136,34 +1135,6 @@ MonoBehaviour:
   scope: 2
   key: HairType
   value: 
---- !u!114 &965841025
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965840997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad2261dbe44de43a980e6f7c77c88f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 46
-  indentLevel: 0
-  textObject: {fileID: 1618479044}
-  text:
-    stringRef: {fileID: 0}
-    stringVal: 'Hair: {$HairType}'
-  description: 
-  clearText: 1
-  waitUntilFinished: 1
-  textColor: 0
-  setAlpha:
-    floatRef: {fileID: 0}
-    floatVal: 1
-  setColor:
-    colorRef: {fileID: 0}
-    colorVal: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &965841026
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1195,7 +1166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 49
   indentLevel: 0
-  storyText: She has been fixated one this little blue computer, no bigger than a
+  storyText: She had been fixated on this little blue computer, no bigger than a
     schoolbook, terribly overpriced though.
   description: 
   character: {fileID: 0}
@@ -1724,11 +1695,6 @@ PrefabInstance:
 --- !u!1 &1618479043 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4002056275336797200, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
-  m_PrefabInstance: {fileID: 1618479042}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1618479044 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6839734949525810189, guid: 2745262b914dc0645ae4c2bff79b4d8e, type: 3}
   m_PrefabInstance: {fileID: 1618479042}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1687258581
