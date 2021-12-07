@@ -336,9 +336,9 @@ MonoBehaviour:
   selectedCommands:
   - {fileID: 965841007}
   variables:
-  - {fileID: 965841004}
-  - {fileID: 965841021}
   - {fileID: 965841020}
+  - {fileID: 965841021}
+  - {fileID: 965841004}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -423,7 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: EyeColour
+  key: Fashion
   value: 
 --- !u!114 &965841005
 MonoBehaviour:

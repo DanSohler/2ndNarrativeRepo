@@ -1169,7 +1169,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1346353706417018344, guid: 87c06814b2fd69b48a5745aa6ccd24fb, type: 3}
       propertyPath: key
-      value: EyeColour
+      value: HairType
       objectReference: {fileID: 0}
     - target: {fileID: 1346353706417018344, guid: 87c06814b2fd69b48a5745aa6ccd24fb, type: 3}
       propertyPath: value
@@ -1271,7 +1271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: HairType
+  key: Fashion
   value: 
 --- !u!114 &1921362550
 MonoBehaviour:

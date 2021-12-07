@@ -258,7 +258,6 @@ GameObject:
   - component: {fileID: 965841022}
   - component: {fileID: 965841021}
   - component: {fileID: 965841020}
-  - component: {fileID: 965841023}
   - component: {fileID: 965841024}
   - component: {fileID: 965841025}
   - component: {fileID: 965841026}
@@ -272,6 +271,7 @@ GameObject:
   - component: {fileID: 965841036}
   - component: {fileID: 965841035}
   - component: {fileID: 965841034}
+  - component: {fileID: 965841010}
   m_Layer: 0
   m_Name: MainFlow
   m_TagString: MainFlowchart
@@ -348,14 +348,13 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 2453113842641918036}
+  selectedBlocks: []
   selectedCommands:
   - {fileID: 2453113842641918026}
   variables:
   - {fileID: 965841024}
   - {fileID: 965841004}
-  - {fileID: 965841023}
+  - {fileID: 965841010}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -689,6 +688,21 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &965841010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965840997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 2
+  key: Fashion
+  value: 
 --- !u!114 &965841011
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1107,21 +1121,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &965841023
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965840997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 2
-  key: NoseShape
-  value: 
 --- !u!114 &965841024
 MonoBehaviour:
   m_ObjectHideFlags: 2
